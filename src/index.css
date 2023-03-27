@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Homescreen{
+    background-color:black;
+    opacity: 90%;
+}
+.transition{
+    transition-timing-function: ease-in;
+    transition-duration: all 0.5s;
+}
+@layer base{
+    li{
+        @apply m-6 opacity-60 hover:opacity-100 hover:cursor-pointer 
+    }
+    button{
+        @apply  bg-[rgba(51,51,51,0.5)] text-white px-6 py-3 my-4 mr-4 rounded-md text-sm hover:bg-white hover:text-black transition font-bold z-10
+    }
+    input {
+        @apply z-20 pl-2 py-[0.6rem] w-[20vw] text-black outline-none my-2  rounded-md;
+    }
+    
+}
+::-webkit-scrollbar{
+    display: none;
+}
